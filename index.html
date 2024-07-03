@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background-color: #006699;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #004466;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #003355;
+        }
+        .hero {
+            background-position: center;
+            height: 100px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            z-index: 1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            color: #006699;
+            padding: 10px;
+            border-bottom: 2px solid #004466;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #006699;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo-animation {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            width: 400px; 
+            height: auto;
+            animation: moveLogo 10s linear infinite;
+        }
+        @keyframes moveLogo {
+            0% {
+                left: -150px;
+            }
+            100% {
+                left: 100%;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Indonesian Tourism</h1>
+    </header>
+    <nav>
+        <a href="#culture">Kebudayaan</a>
+        <a href="#destinations">Tempat Wisata</a>
+        <a href="#hotels">Hotel Favorit</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+    <div class="hero">
+        <img src="logo.png" alt="Running Logo" class="logo-animation"> 
+    </div>
+    <div class="content">
+        <section id="culture">
+            <h2>Kebudayaan Indonesia</h2>
+            <h3>Tarian Tradisional</h3>
+            <ul>
+                <li>
+                    <strong>Tari Kecak (Bali)</strong><br>
+                    Tarian yang dilakukan oleh puluhan pria yang duduk melingkar sambil meneriakkan "cak" secara berirama. Menceritakan kisah Ramayana tanpa alat musik, hanya suara manusia. Sering ditampilkan dalam upacara keagamaan dan festival budaya.
+                </li>
+                <li>
+                    <strong>Tari Saman (Aceh)</strong><br>
+                    Tarian yang melibatkan gerakan tangan dan tubuh yang cepat dan serempak. Dikenal sebagai "Tarian Seribu Tangan". Ditampilkan pada acara-acara adat, keagamaan, dan penyambutan tamu.
+                </li>
+                <li>
+                    <strong>Tari Reog (Ponorogo, Jawa Timur)</strong><br>
+                    Tarian dengan topeng besar yang beratnya bisa mencapai 50 kg. Menggambarkan cerita mitos tentang Singo Barong. Sering ditampilkan pada upacara adat dan perayaan kemerdekaan.
+                </li>
+            </ul>
+            <h3>Upacara dan Tradisi</h3>
+            <ul>
+                <li>
+                    <strong>Upacara Ngaben (Bali)</strong><br>
+                    Upacara kremasi umat Hindu di Bali yang menggunakan kereta kayu besar untuk membawa jenazah. Upacara ini memiliki makna melepaskan roh dari dunia fana menuju alam roh.
+                </li>
+                <li>
+                    <strong>Sekaten (Yogyakarta)</strong><br>
+                    Upacara perayaan Maulid Nabi Muhammad SAW yang menampilkan gamelan Sekaten dan pasar malam. Memperingati kelahiran Nabi Muhammad dan penyebaran Islam di Jawa.
+                </li>
+                <li>
+                    <strong>Upacara Rambu Solo (Toraja, Sulawesi Selatan)</strong><br>
+                    Upacara pemakaman adat suku Toraja yang sangat kompleks dan bisa berlangsung berhari-hari. Mengantar arwah menuju Puya (dunia roh) dengan baik.
+                </li>
+            </ul>
+        </section>
+        <section id="destinations">
+            <h2>Tempat Wisata Terbaik di Indonesia</h2>
+            <ul>
+                <li>
+                    <strong>Bali</strong><br>
+                    Dikenal dengan pantai yang indah, budaya yang kaya, dan kehidupan malam yang meriah. Tempat populer di Bali antara lain Ubud, Kuta, Seminyak, dan Nusa Penida.
+                </li>
+                <li>
+                    <strong>Raja Ampat (Papua Barat)</strong><br>
+                    Keanekaragaman hayati laut yang luar biasa, surga bagi penyelam. Menawarkan pemandangan bawah laut yang menakjubkan dengan terumbu karang yang indah.
+                </li>
+                <li>
+                    <strong>Yogyakarta</strong><br>
+                    Kota budaya dengan banyak candi bersejarah seperti Borobudur dan Prambanan. Menawarkan pengalaman budaya yang kaya dengan keraton dan berbagai seni tradisional.
+                </li>
+                <li>
+                    <strong>Lombok</strong><br>
+                    Dikenal dengan pantai-pantai yang menakjubkan dan Gunung Rinjani. Tempat yang lebih tenang dibanding Bali, dengan keindahan alam yang luar biasa.
+                </li>
+                <li>
+                    <strong>Komodo Island</strong><br>
+                    Tempat tinggal Komodo, reptil terbesar di dunia. Menawarkan trekking dan snorkeling dengan pemandangan alam yang memukau.
+                </li>
+            </ul>
+        </section>
+        <section id="hotels">
+            <h2>Daftar Hotel Favorit</h2>
+            <ul>
+                <li>
+                    <strong>The Mulia, Bali</strong><br>
+                    Alamat: Jl. Raya Nusa Dua Selatan, Bali<br>
+                    Fasilitas: Kolam renang, spa, restoran, bar, Wi-Fi gratis<br>
+                    Harga: Mulai dari Rp 2.500.000 per malam
+                </li>
+                <li>
+                    <strong>Raffles Jakarta</strong><br>
+                    Alamat: Ciputra World 1, Jl. Prof. Dr. Satrio, Jakarta<br>
+                    Fasilitas: Kolam renang, pusat kebugaran, spa, restoran, Wi-Fi gratis<br>
+                    Harga: Mulai dari Rp 3.000.000 per malam
+                </li>
+                <li>
+                    <strong>Plataran Komodo Resort & Spa</strong><br>
+                    Alamat: Waecicu Beach, Labuan Bajo, Flores<br>
+                    Fasilitas: Kolam renang, spa, restoran, bar, layanan antar-jemput bandara<br>
+                    Harga: Mulai dari Rp 4.500.000 per malam
+                </li>
+                <li>
+                    <strong>Hotel Tugu Lombok</strong><br>
+                    Alamat: Sire Beach, Lombok<br>
+                    Fasilitas: Kolam renang, spa, restoran, bar, Wi-Fi gratis<br>
+                    Harga: Mulai dari Rp 3.500.000 per malam
+                </li>
+                <li>
+                    <strong>Ayana Resort and Spa, Bali</strong><br>
+                    Alamat: Jl. Karang Mas Sejahtera, Jimbaran, Bali<br>
+                    Fasilitas: Kolam renang, spa, restoran, bar, Wi-Fi gratis<br>
+                    Harga: Mulai dari Rp 4.000.000 per malam
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; By Reza Adam Chandra Wardana.</p>
+    </footer>
+</body>
+</html>

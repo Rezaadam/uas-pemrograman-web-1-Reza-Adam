@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Tourism - Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #006699;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .confirmation {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 40px auto;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .confirmation h2 {
+            margin-top: 0;
+            color: #006699;
+        }
+        .confirmation p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .confirmation strong {
+            color: #004466;
+        }
+        .confirmation button {
+            background-color: #006699;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .confirmation button:hover {
+            background-color: #004466;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        nav {
+            background-color: #004466;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #003355;
+        }
+    </style>
+    <script>
+        // Fungsi untuk menampilkan data dari sessionStorage
+        window.onload = function() {
+            document.getElementById('userName').innerText = sessionStorage.getItem('name');
+            document.getElementById('userDestination').innerText = sessionStorage.getItem('destination');
+            document.getElementById('userHotel').innerText = sessionStorage.getItem('hotel');
+            document.getElementById('userCheckin').innerText = sessionStorage.getItem('checkin');
+            document.getElementById('userCheckout').innerText = sessionStorage.getItem('checkout');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Indonesian Tourism</h1>
+    </header>
+     <nav>
+        <a href="index.html">Home</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+    <div class="content">
+        <div class="confirmation">
+            <h2>Terima Kasih atas Pemesanan Anda!</h2>
+            <p>Hai <strong id="userName"></strong>,</p>
+            <p>Terima kasih telah melakukan pemesanan melalui Indonesian Tourism. Berikut adalah rincian pemesanan Anda:</p>
+            <p><strong>Destinasi:</strong> <span id="userDestination"></span></p>
+            <p><strong>Hotel:</strong> <span id="userHotel"></span></p>
+            <p><strong>Tanggal Check-in:</strong> <span id="userCheckin"></span></p>
+            <p><strong>Tanggal Check-out:</strong> <span id="userCheckout"></span></p>
+            <button onclick="window.print()">Cetak Konfirmasi</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; By Reza Adam Chandra Wardana.</p>
+    </footer>
+</body>
+</html>
